@@ -3,15 +3,26 @@
 import { navLinks } from "@/data/data";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BookingButton from "./booking-button";
 import Logo from "./logo";
 import { Button } from "./ui/button";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
-      <nav className="px-auto fixed top-0 z-20 w-full bg-transparent transition-all duration-300">
+      <nav
+        className={`px-auto fixed top-0 z-20 w-full transition-all duration-300 ${scrolled ? "bg-background/70 backdrop-blur-md" : "bg-transparent"} `}
+      >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 font-medium md:px-0">
           <Logo />
 

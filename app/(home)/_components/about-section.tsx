@@ -55,13 +55,15 @@ export default function AbouSection() {
             delay={0.2}
             className="bg-primary text-primary-foreground mt-9 flex w-fit items-center gap-3 rounded-lg p-2 pr-8"
           >
-            <Image
-              src={"/assets/about.png"}
-              alt="Bistro Royale Location Preview"
-              width={20}
-              height={20}
-              className="size-16 shrink-0 rounded-lg object-cover"
-            />
+            <div className="relative size-16 shrink-0 overflow-hidden rounded-lg">
+              <Image
+                src="/assets/about.png"
+                alt="Bistro Royale Location Preview"
+                fill
+                sizes="64px"
+                className="object-cover"
+              />
+            </div>
             <div className="flex flex-col gap-2">
               <p className="font-medium">Bistro Royale, NY</p>
               <Link href={"#"}>View on Map</Link>
