@@ -4,6 +4,7 @@ import { navLinks } from "@/data/data";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import BookingButton from "./booking-button";
 import Logo from "./logo";
 import { Button } from "./ui/button";
 export default function Navbar() {
@@ -28,17 +29,7 @@ export default function Navbar() {
           </div>
 
           {/* Booking Button */}
-          <Link href={"#booking-process"} className="hidden md:block">
-            <Button
-              variant={"default"}
-              size={"lg"}
-              className={
-                "text-primary-foreground hover:bg-primary/90 rounded-full p-6"
-              }
-            >
-              Book a table
-            </Button>
-          </Link>
+          <BookingButton className="hidden md:block" />
 
           <Button
             className={"md:hidden"}
