@@ -12,16 +12,18 @@ const avatars = [
 export default function HeroSection() {
   return (
     <section
-      className="flex min-h-screen flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4 pt-20"
+      className="relative flex min-h-screen flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4 pt-20"
       style={{ backgroundImage: "url('/assets/heroBanner.png')" }}
     >
+      <div className="bg-background/55 dark:bg-background/70 absolute inset-0" />
+      <div className="relative z-10 flex flex-col items-center">
       <Animated y={-20} delay={0.2}>
         <p className="text-primary">WHERE FLAVOR MEETS ELEGANCE</p>
       </Animated>
 
       <Animated>
         <h1 className="font-urbanist mt-5 max-w-3xl text-center text-5xl font-medium text-balance md:text-6xl">
-          Crafted for unforgettable dining momentss
+          Crafted for unforgettable dining moments
         </h1>
       </Animated>
 
@@ -41,7 +43,7 @@ export default function HeroSection() {
           {avatars.map((src, index) => (
             <Image
               src={src}
-              alt="avatar"
+              alt={`Guest reviewer ${index + 1}`}
               width={40}
               height={40}
               key={index}
@@ -59,6 +61,7 @@ export default function HeroSection() {
           <p className="text-muted-foreground">4.8/5 Rating - 10,000 reviews</p>
         </div>
       </Animated>
+      </div>
     </section>
   );
 }

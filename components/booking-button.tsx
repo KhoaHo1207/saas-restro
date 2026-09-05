@@ -6,7 +6,7 @@ export default function BookingButton({ className }: { className?: string }) {
   return (
     <Link
       href={"#booking-process"}
-      className={cn("hidden md:block", className)}
+      className={cn(className)}
     >
       <Button
         variant={"default"}

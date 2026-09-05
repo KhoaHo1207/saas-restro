@@ -8,32 +8,32 @@ import Link from "next/link";
 const floatingDishes = [
   {
     src: "/assets/dish1.png",
-    alt: "Dish 1",
+    alt: "Grilled Chicken Alfredo",
     className: "top-6 left-4 md:top-10 md:left-[6%] lg:left-[10%]",
   },
   {
     src: "/assets/dish2.png",
-    alt: "Dish 2",
+    alt: "Mushroom Risotto",
     className: "bottom-6 left-4 md:bottom-10 md:left-[6%] lg:left-[10%]",
   },
   {
     src: "/assets/dish3.png",
-    alt: "Dish 3",
+    alt: "Caprese Salad",
     className: "bottom-6 right-4 md:bottom-10 md:right-[6%] lg:right-[10%]",
   },
   {
     src: "/assets/dish4.png",
-    alt: "Dish 4",
+    alt: "Spaghetti and Meatballs",
     className: "top-6 right-4 md:top-10 md:right-[6%] lg:right-[10%]",
   },
 ];
 export default function CTASection() {
   return (
-    <div
+    <section
       id="cta"
-      className="bg-primary relative mt-44 flex min-h-100 flex-col items-center justify-center overflow-hidden px-6 md:min-h-110"
+      className="bg-primary relative mt-44 flex min-h-100 flex-col items-center justify-center overflow-hidden px-6 py-16 md:min-h-110 md:py-0"
     >
-      <div className="pointer-events-none absolute inset-0 mx-auto w-full max-w-7xl">
+      <div className="pointer-events-none absolute inset-0 mx-auto hidden w-full max-w-7xl md:block">
         {floatingDishes.map((dish) => (
           <Image
             key={dish.alt}
@@ -50,9 +50,9 @@ export default function CTASection() {
       </div>
       <div className="relative z-10 mx-auto max-w-2xl text-center">
         <Animated>
-          <h1 className="text-primary-foreground font-urbanist text-3xl font-medium text-balance md:text-[40px]">
-            Every Meal Is Made To Be Rememebered
-          </h1>
+          <h2 className="text-primary-foreground font-urbanist text-3xl font-medium text-balance md:text-[40px]">
+            Every Meal Is Made To Be Remembered
+          </h2>
         </Animated>
 
         <Animated y={20} delay={0.2}>
@@ -77,6 +77,6 @@ export default function CTASection() {
           </Link>
         </Animated>
       </div>
-    </div>
+    </section>
   );
 }

@@ -9,7 +9,7 @@ export default function Logo() {
         alt="Retro Premium Restaurant Logo"
         width={100}
         height={100}
-        className="h-full w-full object-cover"
+        className="h-8 w-auto object-contain dark:invert"
         priority
       />
     </Link>

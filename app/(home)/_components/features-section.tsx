@@ -10,7 +10,7 @@ const iconMap = {
 };
 export default function FeaturesSection() {
   return (
-    <section id="features" className="px-atuo mt-44">
+    <section id="features" className="mt-44 px-6">
       <div className="mb-16 text-center">
         <Animated delay={0.2}>
           <p className="text-primary mb-3.5 font-medium uppercase">
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
         <Animated x={50} y={50}>
           <Image
             src={"/assets/chef.png"}
-            alt="chef"
+            alt="Chef plating a signature dish"
             width={500}
             height={500}
             className="h-111 w-full max-w-sm rounded-3xl object-cover"

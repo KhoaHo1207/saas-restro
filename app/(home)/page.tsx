@@ -9,7 +9,7 @@ import StatsSection from "./_components/stats-section";
 import TestimonialSection from "./_components/testimonial-section";
 import TimingSection from "./_components/timing";
 
-export default function HomePgae() {
+export default function HomePage() {
   return (
     <>
       <HeroSection />

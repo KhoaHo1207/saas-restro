@@ -5,7 +5,7 @@ import Logo from "./logo";
 
 export default function Footer() {
   return (
-    <footer className="px-auto relative mt-44 overflow-hidden px-6 md:px-0">
+    <footer className="relative mt-44 overflow-hidden px-6">
       <div className="mx-auto max-w-7xl">
         {/* Row */}
         <div className="flex flex-wrap justify-between gap-6 pb-8">
@@ -28,7 +28,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     href={social.href}
-                    className="border-border grid size-7.5 place-content-center rounded-full border"
+                    className="border-border text-foreground grid size-7.5 place-content-center rounded-full border"
                   >
                     {social.icon}
                   </a>
@@ -99,20 +99,26 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="text-muted-foreground border-border flex items-center justify-between border-t py-4.5 text-sm">
+        <div className="text-muted-foreground border-border flex flex-col gap-2 border-t py-4.5 text-sm sm:flex-row sm:items-center sm:justify-between">
           <p>
             &copy; {new Date().getFullYear()} Retro Premium Restaurant. All
-            Right Reserved
+            Rights Reserved
           </p>
           <p>
-            Designed by <a href="https://github.com/KhoaHo1207">Thomas Ho</a>
+            Designed by{" "}
+            <a
+              href="https://github.com/KhoaHo1207"
+              className="hover:text-primary underline-offset-2 hover:underline"
+            >
+              Thomas Ho
+            </a>
           </p>
         </div>
       </div>
 
       {/* Watermark Logo Backdrop */}
       <div className="pointer-events-none absolute inset-0 -z-1 text-center select-none">
-        <span className="font-urbanist text-muted-foreground/5 text-[300px] font-semibold tracking-wide">
+        <span className="font-urbanist text-muted-foreground/5 hidden text-[180px] font-semibold tracking-wide md:inline lg:text-[300px]">
           Retro
         </span>
       </div>

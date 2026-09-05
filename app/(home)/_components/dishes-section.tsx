@@ -10,7 +10,7 @@ export default function DishesS() {
   const [rotate, setRotate] = useState<Record<number, number>>({});
 
   return (
-    <section id="dishes" className="px-auto mt-44">
+    <section id="dishes" className="mt-44 px-6">
       <div className="mb-16 text-center">
         <Animated>
           <p className="text-primary mb-3.5 font-medium uppercase">
@@ -59,7 +59,7 @@ export default function DishesS() {
             </motion.div>
 
             <h3 className="mt-5">{dish.title}</h3>
-            <p className="mt-2 text-zinc-600">{dish.price}</p>
+            <p className="text-muted-foreground mt-2">{dish.price}</p>
           </Animated>
         ))}
       </div>

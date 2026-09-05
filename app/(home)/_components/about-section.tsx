@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function AbouSection() {
   return (
-    <section id="about" className="px-auto mt-44 px-6">
+    <section id="about" className="mt-44 px-6">
       <div className="mx-auto flex max-w-7xl flex-col gap-14 md:flex-row md:gap-16">
         {/* Left Side: Main Image */}
         <Animated scale={0.8} y={0}>
           <Image
             src={"/assets/about.png"}
-            alt="About Image"
+            alt="Plated salmon dinner at Retro Premium Restaurant"
             width={500}
             height={500}
             className="h-full w-full max-w-137 rounded-3xl object-cover"
@@ -21,17 +21,17 @@ export default function AbouSection() {
           <Animated scale={0.8} y={0} className="flex items-center gap-2">
             <Image
               src={"/assets/iconL.png"}
-              alt="icon Left"
+              alt=""
               width={50}
               height={50}
               className="size-6"
             />
             <span className="font-medium tracking-widest uppercase">
-              Carfted with Passion
+              Crafted with Passion
             </span>
             <Image
               src={"/assets/iconR.png"}
-              alt="icon Right"
+              alt=""
               width={50}
               height={50}
               className="size-6"

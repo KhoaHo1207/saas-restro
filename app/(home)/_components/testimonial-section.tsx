@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function TestimonialSection() {
   return (
-    <section id="testimonials" className="px-auto mt-44">
+    <section id="testimonials" className="mt-44">
       <div className="mb-14 text-center">
         <Animated delay={0.2}>
           <p className="text-primary mb-3.5 font-medium uppercase">
@@ -20,7 +20,7 @@ export default function TestimonialSection() {
       </div>
 
       {/* Testimonials Grid */}
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-6 md:grid-cols-2 md:px-0 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-6 md:grid-cols-2 lg:grid-cols-3">
         {testimonials.map((item, index) => (
           <Animated
             key={index}

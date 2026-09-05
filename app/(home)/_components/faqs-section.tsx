@@ -4,7 +4,7 @@ import { Plus, X } from "lucide-react";
 
 export default function FAQsSection() {
   return (
-    <section id="faq" className="px-auto mt-44">
+    <section id="faq" className="mt-44">
       <div className="mx-auto max-w-3xl">
         <div className="mb-14 text-center">
           <Animated delay={0.2}>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function BookingProcessSection() {
   return (
-    <section id="booking-process" className="px-auto mt-44">
+    <section id="booking-process" className="mt-44 px-6">
       <div className="mx-auto grid max-w-7xl gap-16 md:grid-cols-2 md:gap-25">
         {/* Left Side */}
         <div className="flex flex-col text-center md:text-left">

@@ -4,7 +4,7 @@ import { timingData } from "@/data/data";
 
 export default function TimingSection() {
   return (
-    <section id="timing" className="px-auto mt-44">
+    <section id="timing" className="mt-44 px-6">
       <Animated
         scale={0.8}
         y={0}
