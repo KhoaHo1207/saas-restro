@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar";
 import AboutSection from "./_components/about-section";
 import BookingProcessSection from "./_components/booking-process-section";
 import CTASection from "./_components/cta";
@@ -13,7 +12,6 @@ import TimingSection from "./_components/timing";
 export default function HomePgae() {
   return (
     <>
-      <Navbar />
       <HeroSection />
       <AboutSection />
       <StatsSection />

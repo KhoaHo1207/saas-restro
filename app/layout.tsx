@@ -1,3 +1,6 @@
+import Footer from "@/components/footer";
+import LenisScroll from "@/components/lenis-scroll";
+import Navbar from "@/components/navbar";
 import type { Metadata } from "next";
 import { Geist, Urbanist } from "next/font/google";
 import "./globals.css";
@@ -29,7 +32,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${urbanist.variable} ${geist.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <LenisScroll />
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

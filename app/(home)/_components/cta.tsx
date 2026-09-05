@@ -63,7 +63,7 @@ export default function CTASection() {
         </Animated>
 
         <Animated delay={0.2} className="flex items-center justify-center">
-          <Link href={"/"}>
+          <Link href={"#booking-process"}>
             <Button
               variant={"default"}
               size={"lg"}
