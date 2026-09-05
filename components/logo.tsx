@@ -6,7 +6,7 @@ export default function Logo() {
     <Link href={"/"}>
       <Image
         src={"/assets/logo.svg"}
-        alt="Retro Premium Restaurant Logo"
+        alt="Restro Premium Restaurant Logo"
         width={100}
         height={100}
         className="h-8 w-auto object-contain dark:invert"

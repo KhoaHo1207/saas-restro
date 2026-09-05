@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="text-muted-foreground border-border flex flex-col gap-2 border-t py-4.5 text-sm sm:flex-row sm:items-center sm:justify-between">
           <p>
-            &copy; {new Date().getFullYear()} Retro Premium Restaurant. All
+            &copy; {new Date().getFullYear()} Restro Premium Restaurant. All
             Rights Reserved
           </p>
           <p>
@@ -119,7 +119,7 @@ export default function Footer() {
       {/* Watermark Logo Backdrop */}
       <div className="pointer-events-none absolute inset-0 -z-1 text-center select-none">
         <span className="font-urbanist text-muted-foreground/5 hidden text-[180px] font-semibold tracking-wide md:inline lg:text-[300px]">
-          Retro
+          Restro
         </span>
       </div>
     </footer>

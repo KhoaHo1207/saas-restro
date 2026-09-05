@@ -10,7 +10,7 @@ export default function AbouSection() {
         <Animated scale={0.8} y={0}>
           <Image
             src={"/assets/about.png"}
-            alt="Plated salmon dinner at Retro Premium Restaurant"
+            alt="Plated salmon dinner at Restro Premium Restaurant"
             width={500}
             height={500}
             className="h-full w-full max-w-137 rounded-3xl object-cover"

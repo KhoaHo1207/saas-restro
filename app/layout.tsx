@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "restaurant",
     "fine dining",
     "table reservation",
-    "retro restaurant",
+    "restro restaurant",
     "signature dishes",
   ],
   authors: [{ name: siteConfig.name }],
