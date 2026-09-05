@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import AboutSection from "./_components/about-section";
 import BookingProcessSection from "./_components/booking-process-section";
+import CTASection from "./_components/cta";
 import DishesSection from "./_components/dishes-section";
 import FAQsSection from "./_components/faqs-section";
 import FeaturesSection from "./_components/features-section";
@@ -22,6 +23,7 @@ export default function HomePgae() {
       <TimingSection />
       <TestimonialSection />
       <FAQsSection />
+      <CTASection />
     </>
   );
 }
